@@ -1,0 +1,42 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownTarget" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JSJQueryEfficiency" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="18">
+            <item index="0" class="java.lang.String" itemvalue="selenium-wire" />
+            <item index="1" class="java.lang.String" itemvalue="py7zr" />
+            <item index="2" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="3" class="java.lang.String" itemvalue="mitmproxy" />
+            <item index="4" class="java.lang.String" itemvalue="webdriver-manager" />
+            <item index="5" class="java.lang.String" itemvalue="futures" />
+            <item index="6" class="java.lang.String" itemvalue="geojson" />
+            <item index="7" class="java.lang.String" itemvalue="selenium" />
+            <item index="8" class="java.lang.String" itemvalue="Unidecode" />
+            <item index="9" class="java.lang.String" itemvalue="retrying" />
+            <item index="10" class="java.lang.String" itemvalue="xmltodict" />
+            <item index="11" class="java.lang.String" itemvalue="pyproj" />
+            <item index="12" class="java.lang.String" itemvalue="urllib3" />
+            <item index="13" class="java.lang.String" itemvalue="jsonlines" />
+            <item index="14" class="java.lang.String" itemvalue="retry" />
+            <item index="15" class="java.lang.String" itemvalue="django-countries" />
+            <item index="16" class="java.lang.String" itemvalue="six" />
+            <item index="17" class="java.lang.String" itemvalue="paramiko" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="src.offers.offers_procomm.soup_page" />
+          <option value="src.offers.offers_cessionpme.handle_offer" />
+          <option value="src.stores.companies_stores_danslestuyaux.clean_brand_name" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
