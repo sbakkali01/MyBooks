@@ -1,8 +1,0 @@
-My first e-commerce website using django and bootstrap
-
-Steps :
-
-Video 1 : creating the project , venv , startproject , app store , creating the models : Category with name , slug .
- Products : title , category , created_by ,author , description , image , slug , price , in_stock , is_active , created
- updated , objects , products.
- Creating store view using path and include
