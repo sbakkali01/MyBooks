@@ -7,3 +7,5 @@ Category : name , slug .
 Products : title , category (many to one , know how to explain CASCADE /PROTECT) , created_by ,author , description,  image (using Pillow ), slug , price , in_stock , is_active , created updated , objects , products.
 
  Creating store view using path and include for the urlpatterns ,
+ 
+ Testinnnnng
