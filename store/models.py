@@ -1,13 +1,21 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 class Category(models.Model):
     name=models.CharField(max_length=200)
     slug=models.SlugField(max_length=200)
+    class Meta :
+        verbose_name_plural='categories'
 
 class Product(models.Model):
-    title=models.CharField(max_length=200)
-    category=models.ForeignKey(to="Category",on_delete=models.CASCADE)
-    created_by=models.CharField(max_length=200)
-    author = models.CharField(max_length=200)
-    description=models.TextField(max_length=2000)
-    image=models.ImageField()
+    category = models.ForeignKey(Category, related_name='product', on_delete=models.CASCADE)
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='product_creator')
+    title = models.CharField(max_length=255)
+    author = models.CharField(max_length=255, default='admin')
+    description = models.TextField(blank=True)
+    image = models.ImageField(upload_to='images/')
+    slug = models.SlugField(max_length=255)
+    price = models.DecimalField(max_digits=4, decimal_places=2)
+    in_stock = models.BooleanField(default=True)
+    is_active = models.BooleanField(default=True)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
